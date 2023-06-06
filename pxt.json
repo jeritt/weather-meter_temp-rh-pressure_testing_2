@@ -1,5 +1,5 @@
 {
-    "name": "weather-meter_temp-rh-pressure_testing_2",
+    "name": "weather-meter_wind-speed",
     "description": "",
     "dependencies": {
         "core": "*",

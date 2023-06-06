@@ -7,7 +7,6 @@ input.onButtonPressed(Button.A, function () {
     convertPressure()
     serial.writeValue("Temp (C)", tempCelsius)
     serial.writeValue("Humidity (%)", RH)
-    serial.writeValue("Pressure (hPa)", hPa)
 })
 function convertTemp () {
     tempCelsius = Math.idiv(weatherbit.temperature(), 100)
@@ -21,7 +20,7 @@ let RH = 0
 let tempCelsius = 0
 let hPa = 0
 weatherbit.startWeatherMonitoring()
-let elevation = 253
+weatherbit.startWindMonitoring()
 basic.forever(function () {
 	
 })
